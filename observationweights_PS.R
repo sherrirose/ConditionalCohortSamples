@@ -64,7 +64,6 @@ SL.random <- SuperLearner(Y=randomsample[,7], X=randomsample[,1:6],
 SL.weights <- SuperLearner(Y=conditionalsample[,7], X=conditionalsample[,1:6],
                            family="binomial", SL.library=SL.lib,
                            method="method.NNLS", verbose=T, obsWeights=weight)
-
 SL.noweights <- SuperLearner(Y=conditionalsample[,7], X=conditionalsample[,1:6],
                             family="binomial", SL.library=SL.lib,
                             method="method.NNLS", verbose=T)
